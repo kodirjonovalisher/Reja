@@ -1,8 +1,7 @@
-console.log("Web serverni boshlash");
+console.log("Web server is starting...");
 const express = require("express");
 const app = express();
 const http = require("http");
-
 
 // 1 Kirish code
 
@@ -17,19 +16,19 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 // 4 Routing code
-app.get("/hello", function (req, res) {
-    res.end(`<h1> Hello World by Alisher</h1>`);
+app.post("/create-item", (req, res) => {
+    console.log(req);
+    res.json({ message: "Test success" });
 });
 
-app.get("/gift", function (req, res) {
-    res.end(`<h1> Gifts for you</h1>`);
-});
-app.get("/sos", function (req, res) {
-    res.end(`<h1> SOOOS</h1>`);
+app.get("/", function (req, res) { 
+    res.render("purchase");
+    
 });
 
 const server = http.createServer(app);
 let PORT = 3000;
+
 server.listen(PORT, function () {
     console.log(`The server is running succsessfully on port: ${PORT}`);
 })
