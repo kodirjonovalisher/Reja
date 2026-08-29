@@ -15,21 +15,21 @@ fs.readFile("database/user.json", "utf-8", (err, data) => {
 
 // 1 Kirish code
 
-app.use(express.static("public"));
+app.use(express.static("public")); 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// 2: Session code
+// 2: Session codeß
 
-// 3  Views code
+// 3  Views code  
 app.set("views", "views");
 app.set("view engine", "ejs");
 
 // 4 Routing code
 app.post("/create-item", (req, res) => {
 
-    //TO DO: code with database here
-});
+    //TO DO: code with database hereßßß
+}); 
 
     app.get("/author", (req, res) => {
         res.render("author", { user: user});
