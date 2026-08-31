@@ -12,7 +12,7 @@
 
 <body style="background-color: grey">
     <div class="container">
-        <h1 class="display-4 text-center py-1">Plans and Goals</h1>
+        <h1 class="display-4 text-center py-1">Reja va Maqsadlar</h1>
         <div class="jumbotron p-3 shadow-sm">
             <form id="create-form" action="/create-item" method="POST">
                 <div class="d-flex align-items-center">
@@ -26,11 +26,18 @@
                     type="text"
                     style="flex: 1"
                     >
-                    <button type="submit" class="btn btn-primary" style="border-radius: 20px;">Add new item </button>
+                    <button type="submit" class="btn btn-primary" style="border-radius: 20px;">
+                        Yangi Reja Qo'shish</button>
                 </div>
 
             </form>
+            
         </div>
+
+        <div>
+                <button class="btn btn-danger my-3" id="delete-all" style="border-radius: 20px">
+                    Barcha Rejalarni O'chirish</button>
+            </div>
     </div>
 
 </body>

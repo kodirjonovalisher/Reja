@@ -37,13 +37,13 @@ app.post("/create-item", (req, res) => {
 });
 
 app.get("/", function (req, res) { 
-    res.render("purchase");
-    
+    res.render("reja")
 });
 
 const server = http.createServer(app);
 let PORT = 3000;
 
 server.listen(PORT, function () {
-    console.log(`The server is running succsessfully on port: ${PORT}`);
+    console.log(`The server is running succsessfully on port: ${PORT}, http://localhost:${PORT}`
+     );
 })

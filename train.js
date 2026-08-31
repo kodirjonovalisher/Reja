@@ -1,5 +1,7 @@
 //MIT A-TASK
 
+  // ======> 1-usul
+
  function countLetter1(harf, soz) {
     let count = 0; 
     for (let x of soz) {
