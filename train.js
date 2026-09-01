@@ -1,31 +1,47 @@
+//MIT B-TASK
+
+function countdigit(sozlar) {
+    let count = 0;
+    for (let x of sozlar) {
+        if (x >= "0" && x <= "9") 
+            count++;
+        }   
+        return count;
+    }
+
+    console.log("natija: ", countdigit("Alisher19970406"));
+
+
+
+
 //MIT A-TASK
 
   // ======> 1-usul
 
- function countLetter1(harf, soz) {
-    let count = 0; 
-    for (let x of soz) {
-    if ( x === harf) 
-        count = count + 1;
-    }
-    return count;
- }
-  console.log("Natija: ", countLetter1("l", "Alisher")); 
+//  function countLetter1(harf, soz) {
+//     let count = 0; 
+//     for (let x of soz) {
+//     if ( x === harf) 
+//         count = count + 1;
+//     }
+//     return count;
+//  }
+//   console.log("Natija: ", countLetter1("l", "Alisher")); 
 
 
-  console.log("===============================");
+//   console.log("===============================");
   
-  // ======> 2-usul
+//   // ======> 2-usul
 
-    const countLetter2 = (harf, soz) => {
-        let count = 0;
-        for (let x of soz) {
-            if (x === harf)
-                count++;
-        }
-        return count;
-    };
-    console.log("Natija: ", countLetter2("o", "Kodirjonov"));
+//     const countLetter2 = (harf, soz) => {
+//         let count = 0;
+//         for (let x of soz) {
+//             if (x === harf)
+//                 count++;
+//         }
+//         return count;
+//     };
+//     console.log("Natija: ", countLetter2("o", "Kodirjonov"));
 
 
 

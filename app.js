@@ -52,7 +52,7 @@ app.get("/", function (req, res) {
     db.collection("plans")
     .find()
     .toArray((err, data) => {
-        if (err) {
+        if (err) {  
             console.log(err);
             res.end("Xatolik yuz berdi");
         } else {
