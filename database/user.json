@@ -1,53 +1,31 @@
 {
-  "name": "Alisher",
-  "profession": "Software Engineer",
-  "age": 28,
-  "residence": "S.Korea",
-  "address": "S.Korea, Busan",
-  "languages": ["Uzbek", "Korean", "English"],
-  "skills": ["Html", "Css", "Js", "NodeJS", "Python"],
-  "extra_skills": ["Bootstrap", "Materialize", "Styling", "Sass", "Django", "Flask", "GIT Knowledge"],
-  "work_place": "IT Company",
-  "service_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.",
-  "about_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque penatibus et magnis dis parturient montes nascetur ridiculus mus. Cras sed felis eget.",
-  "city": "Denau",
-  "title": ["Flower", "Seedlings", "Gardner", "Old", "New"],
-  "flower_desc": ["What is a Flower?", "What is a Seedling?", "Who is Gardner?"],
-  "flower_name": ["Tulip", "Daffodil", "Poppy", "Sunflower", "Bluebell", "Rose", "Snowdrop", "Cherry", "blossom"],
-  "flower_price": ["15$", "25$", "12$", "20$", "35$", "30$", "22$", "19$", "9$"],
-  "famous_words": ["World is Beautiful with Flowers"],
-  "famous_name": ["Steve Jobs"],
-  "services": [
-{
-      "icon": "/author/icon/coding.svg",
-      "title": "Web Development",
-      "description": "Blog, E-Commerce"
-    },
-    {
-      "icon": "/author/icon/illustration.svg",
-      "title": "UI/UX Design",
-      "description": "Mobile App, Website Design"
-    },
-    {
-      "icon": "/author/icon/Microphone.svg",
-      "title": "Sound Design",
-      "description": "Voice Over, Beat Making"
-    },
-    {
-      "icon": "/author/icon/game-development.svg",
-      "title": "Game Design",
-      "description": "Character Design, Props & Objects"
-    },
-    {
-      "icon": "/author/icon/Photographer.svg",
-      "title": "Photography",
-      "description": "Portrait, Product Photography"
-    },
-    {
-      "icon": null,
-      "title": "Advertising",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vitae nulla diam in ac dictum a urna viverra morbi.",
-      "link": "ORDER NOW >"
-    }
-  ]
-}
+    "name": "Alisher",
+    "profession": "Software AI Engineer",
+    "age": 28,
+    "residence": "South Korea",
+    "address": "South Korea, Busan",
+    "languages": [
+      { "name": "Uzbek", "percent": 95 },
+      { "name": "Korean", "percent": 60 },
+      { "name": "English", "percent": 90 }
+    ],
+    "skills": [
+      {"name": "HTMl", "percent": 90}, 
+      {"name": "CSS", "percent": 85}, 
+      {"name": "JS", "percent": 50}, 
+      {"name": "NodeJS", "percent": 50}
+      ],
+
+    "extra_skills": ["Materialize, Stylus ","Bootstrap, Sass, Less",  "GIT Experience"],
+    "work_place": "IT Company in Busan City South Korea",
+    "service_desc": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.",
+    "about_me": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et, volutpat feugiat placerat lobortis. Natoque rutrum semper sed suspendisse nunc lectus.",
+    "city": "Seomyeon-gu, Busan, South Korea",
+    "title": ["Web Developer", "Game Developer", "UI/UX Designer ",  "Sound Engineer", "New"],
+    "flower_desc": ["Blog", "Ecommerce", "Portfolio", "Business", "Personal"],
+    "flower_name": ["Character Design", "Prop Design", "Game"],
+    "flower_price": ["Mobile app", "Website", "Game"],
+    "famous_words": ["Voice, Sound, Music"],
+    "famous_name": ["Steve Jobs"]
+  }
+  

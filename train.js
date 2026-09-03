@@ -3,7 +3,7 @@
 function countdigit(sozlar) {
     let count = 0;
     for (let x of sozlar) {
-        if (x >= "0" && x <= "9") 
+        if (x >= "0" && x <= "5") 
             count++;
         }   
         return count;
