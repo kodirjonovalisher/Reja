@@ -31,3 +31,25 @@ axios.post("/create-item", { reja: createField.value })
 });
 
 });
+
+document.addEventListener("click", function(e) {
+    //deelete button bosilganda
+
+    console.log(e.target);
+        if (e.target.classList.contains("delete-me")) {
+            if(confirm("Siz rostdan ham ushbu rejani o'chirmoqchimisiz?")) {
+               axios.post("/delete-item", { id: e.target.getAttribute("data-id") })
+               .then(response => {
+                console.log(response.data);
+                e.target.parentElement.parentElement.remove();
+               })
+                .catch(err => {
+                    console.log("Xatolik yuz berdi, iltimos qayta urinib ko'ring");
+                });
+            }
+}  
+    //edit button bosilganda
+    if (e.target.classList.contains("edit-me")) {
+        alert("Siz tahrirlash tugmasini bosdingiz");
+}
+});

@@ -15,6 +15,7 @@ fs.readFile("database/user.json", "utf-8", (err, data) => {
 
 // MongoDB chaqirish
 const db = require("./server").db();
+const mongodb = require("mongodb");
 
 // 1 Kirish code
 
@@ -45,9 +46,25 @@ db.collection("plans").insertOne({ reja: new_reja }, (err, result) => {
     // }
 });
 }); 
+
+
+    // 5: Delete item code Browser.js
+
+    app.post("/delete-item", (req, res) => {
+    const id = req.body.id;
+    db.collection("plans").deleteOne(
+        { _id: new mongodb.ObjectId(id) }, 
+    (err, result) => {  
+    res.json({ state: "success" });
+   
+    });
+    });
  
-    app.get("/author", (req, res) => {
-        res.render("author", { user: user});
+
+
+// Author page code, Portfolio page code
+app.get("/author", (req, res) => {
+     res.render("author", { user: user});
 
 });
 
