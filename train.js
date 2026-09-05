@@ -1,15 +1,29 @@
+//MIT C-TASK
+function checkContent(a, b) {
+   
+    for (let i = 0; i < a.length; i++) {
+    
+    if (!b.includes(a[i])) {
+        return false; }
+    }
+   return true;
+}
+console.log("misol1: ", checkContent("alisher", "hsreial"));
+console.log("misol2: ", checkContent("otabek", "abotee"));
+
+
 //MIT B-TASK
 
-function countdigit(sozlar) {
-    let count = 0;
-    for (let x of sozlar) {
-        if (x >= "0" && x <= "5") 
-            count++;
-        }   
-        return count;
-    }
+// function countdigit(sozlar) {
+//     let count = 0;
+//     for (let x of sozlar) {
+//         if (x >= "0" && x <= "5") 
+//             count++;
+//         }   
+//         return count;
+//     }
 
-    console.log("natija: ", countdigit("Alisher19970406"));
+//     console.log("natija: ", countdigit("Alisher19970406"));
 
 
 
