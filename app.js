@@ -49,7 +49,6 @@ db.collection("plans").insertOne({ reja: new_reja }, (err, result) => {
 
 
     // 5: Delete item code Browser.js
-
     app.post("/delete-item", (req, res) => {
     const id = req.body.id;
     db.collection("plans").deleteOne(
@@ -59,15 +58,38 @@ db.collection("plans").insertOne({ reja: new_reja }, (err, result) => {
    
     });
     });
- 
 
 
-// Author page code, Portfolio page code
+    // 6: Edit item code Browser.js
+    app.post("/edit-item", (req, res) => {
+        const data = req.body;
+        console.log(data);
+        db.collection("plans").findOneAndUpdate(
+            { _id: new mongodb.ObjectId(data.id) },
+            { $set: { reja: data.new_input } },
+            function (err, data) {
+                res.json({ state: "success" });
+            }
+        );
+    });
+
+    // 8: Delete all code
+    app.post("/delete-all", (req, res) => {
+        if (req.body.delete_all) {
+            db.collection("plans").deleteMany(function () {
+                res.json({ state: "Hammasi o'chirildi" });
+            });
+        }
+    });
+
+// Author page code, Portfolio page code 
 app.get("/author", (req, res) => {
      res.render("author", { user: user});
 
 });
 
+
+// 7: Home page code
 app.get("/", function (req, res) { 
     console.log('userentered /');
     db.collection("plans")
