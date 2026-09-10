@@ -18,7 +18,8 @@ function findDoublers(harf) {
 console.log("Natija 1: ", findDoublers("Alisher"));
 console.log("Natija 2: ", findDoublers("Qodirjonov"));
 console.log("Natija 3: ", findDoublers("Mashaqqat"));
-console.log("Natija 4: ", findDoublers("MIT job"));
+console.log("Natija 3: ", findDoublers("MIT jobs"));
+
 
 
 //MIT D-TASK
