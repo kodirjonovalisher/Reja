@@ -1,36 +1,59 @@
+//MIT F-TASK
+
+function findDoublers(harf) {
+    
+    for (let i = 0; i < harf.length; i++) {
+
+        for (let a = i + 1; a < harf.length; a++) {
+
+            if (harf[i] === harf[a]) {
+
+                return true;
+            }
+        }
+    }
+
+    return false;
+}
+console.log("Natija 1: ", findDoublers("Alisher"));
+console.log("Natija 2: ", findDoublers("Qodirjonov"));
+console.log("Natija 3: ", findDoublers("Mashaqqat"));
+console.log("Natija 4: ", findDoublers("MIT job"));
+
+
 //MIT D-TASK
 
-class Oshxona {
-    constructor(palov, choy, non, salat) { 
-        this.palov = palov;
-        this.choy = choy;
-        this.non = non;
-        this.salat = salat;
-    }
-    qoldiq() {
-        let vaqt = new Date();
+// class Oshxona {
+//     constructor(palov, choy, non, salat) { 
+//         this.palov = palov;
+//         this.choy = choy;
+//         this.non = non;
+//         this.salat = salat;
+//     }
+//     qoldiq() {
+//         let vaqt = new Date();
 
-        console.log(`Hozirgi  ${vaqt.getHours()}:${vaqt.getMinutes()} vaqtda -----  `
-        + `Oshxonada jami ${this.palov} pors palov, ${this.choy} ta choy, ${this.non}  ta non, ${this.salat} ta salat mavjud`);
-    }
-    sotish(ovqat, soni) {
-        this[ovqat] -= soni;
-    }
-    qabul(ovqat, soni) {
-        this[ovqat] += soni;
-    }
-}
-    let oshxona = new Oshxona(10, 15, 20, 10);
+//         console.log(`Hozirgi  ${vaqt.getHours()}:${vaqt.getMinutes()} vaqtda -----  `
+//         + `Oshxonada jami ${this.palov} pors palov, ${this.choy} ta choy, ${this.non}  ta non, ${this.salat} ta salat mavjud`);
+//     }
+//     sotish(ovqat, soni) {
+//         this[ovqat] -= soni;
+//     }
+//     qabul(ovqat, soni) {
+//         this[ovqat] += soni;
+//     }
+// }
+//     let oshxona = new Oshxona(10, 15, 20, 10);
    
-    oshxona.qoldiq();
-    console.log("             <=============================================================>");
-    oshxona.sotish("palov", 8);
-    oshxona.sotish("choy", 10);
-    oshxona.qoldiq();
-    console.log("Oshxonaga qabul qilindi:");
+//     oshxona.qoldiq();
+//     console.log("             <=============================================================>");
+//     oshxona.sotish("palov", 8);
+//     oshxona.sotish("choy", 10);
+//     oshxona.qoldiq();
+//     console.log("Oshxonaga qabul qilindi:");
 
-    oshxona.qabul("non", 12);
-    oshxona.qoldiq();
+//     oshxona.qabul("non", 12);
+//     oshxona.qoldiq();
    
 
 
