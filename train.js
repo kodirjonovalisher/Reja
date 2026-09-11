@@ -19,6 +19,12 @@ console.log("Natija 1: ", findDoublers("Alisher"));
 console.log("Natija 2: ", findDoublers("Qodirjonov"));
 console.log("Natija 3: ", findDoublers("Mashaqqat"));
 console.log("Natija 3: ", findDoublers("MIT jobs"));
+console.log("Natija 3: ", findDoublers("MIT jobs"));
+console.log("Natija 3: ", findDoublers("MIT jobs"));
+console.log("Natija 3: ", findDoublers("MIT jobs"));
+console.log("Natija 3: ", findDoublers("MIT jobs"));
+console.log("Natija 3: ", findDoublers("MIT jobs"));
+
 
 
 
