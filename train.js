@@ -1,29 +1,44 @@
+// MIT E-TASK
+function getReverse(word) {
+    let teskari = "";
+    for (let x of word) {
+        teskari = x + teskari
+        //teskari += x
+    }
+    return teskari;
+}
+
+console.log("Misol 1:", getReverse("alisher"));
+console.log("Misol 2:",getReverse("aziza"));
+console.log("Misol 3:",getReverse("nuna"));
+console.log("Misol 4",getReverse("nega"));
 //MIT F-TASK
 
-function findDoublers(harf) {
+
+// function findDoublers(harf) {
     
-    for (let i = 0; i < harf.length; i++) {
+//     for (let i = 0; i < harf.length; i++) {
 
-        for (let a = i + 1; a < harf.length; a++) {
+//         for (let a = i + 1; a < harf.length; a++) {
 
-            if (harf[i] === harf[a]) {
+//             if (harf[i] === harf[a]) {
 
-                return true;
-            }
-        }
-    }
+//                 return true;
+//             }
+//         }
+//     }
 
-    return false;
-}
-console.log("Natija 1: ", findDoublers("Alisher"));
-console.log("Natija 2: ", findDoublers("Qodirjonov"));
-console.log("Natija 3: ", findDoublers("Mashaqqat"));
-console.log("Natija 3: ", findDoublers("MIT jobs"));
-console.log("Natija 3: ", findDoublers("MIT jobs"));
-console.log("Natija 3: ", findDoublers("MIT jobs"));
-console.log("Natija 3: ", findDoublers("MIT jobs"));
-console.log("Natija 3: ", findDoublers("MIT jobs"));
-console.log("Natija 3: ", findDoublers("MIT jobs"));
+//     return false;
+// }
+// console.log("Natija 1: ", findDoublers("Alisher"));
+// console.log("Natija 2: ", findDoublers("Qodirjonov"));
+// console.log("Natija 3: ", findDoublers("Mashaqqat"));
+// console.log("Natija 3: ", findDoublers("MIT jobs"));
+// console.log("Natija 3: ", findDoublers("MIT jobs"));
+// console.log("Natija 3: ", findDoublers("MIT jobs"));
+// console.log("Natija 3: ", findDoublers("MIT jobs"));
+// console.log("Natija 3: ", findDoublers("MIT jobs"));
+// console.log("Natija 3: ", findDoublers("MIT jobs"));
 
 
 
