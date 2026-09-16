@@ -12,7 +12,8 @@
  }
     console.log(getHighestIndex([7,21,14,23,5]));
     
-
+// DEPLOY qilindi 
+// http://187.53.139.171:6001
 
 
 // MIT E-TASK
