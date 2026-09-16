@@ -1,17 +1,36 @@
-// MIT E-TASK
-function getReverse(word) {
-    let teskari = "";
-    for (let x of word) {
-        teskari = x + teskari
-        //teskari += x
-    }
-    return teskari;
-}
+//MIT G-TASK
 
-console.log("Misol 1:", getReverse("alisher"));
-console.log("Misol 2:",getReverse("aziza"));
-console.log("Misol 3:",getReverse("nuna"));
-console.log("Misol 4",getReverse("nega"));
+ // let arr = [2,4,1,7,22,44,55]
+ function getHighestIndex(arr) {
+    let max = 0;
+
+    for (let i=1; i<arr.length; i++) {
+        if(arr[i]>arr[max])
+            max =i;
+    }
+        return max;
+ }
+    console.log(getHighestIndex([7,21,14,23,5]));
+    
+
+
+
+// MIT E-TASK
+// function getReverse(word) {
+//     let teskari = "";
+//     for (let x of word) {
+//         teskari = x + teskari
+//         //teskari += x
+//     }
+//     return teskari;
+// }
+
+// console.log("Misol 1:", getReverse("alisher"));
+// console.log("Misol 2:",getReverse("aziza"));
+// console.log("Misol 3:",getReverse("nuna"));
+// console.log("Misol 4",getReverse("nega"));
+
+
 //MIT F-TASK
 
 
