@@ -1,16 +1,33 @@
+// MIT H- TASK
+
+
+function getPositive(arr) {
+    let result = "";
+
+    for (let x of arr)
+        if (x > 0) 
+        result = result + x;
+
+    return result;
+}
+
+
+console.log("natija:", getPositive([3,5,-4,7,-8])) ;
+
+
 //MIT G-TASK
 
- // let arr = [2,4,1,7,22,44,55]
- function getHighestIndex(arr) {
-    let max = 0;
+//  // let arr = [2,4,1,7,22,44,55]
+//  function getHighestIndex(arr) {
+//     let max = 0;
 
-    for (let i=1; i<arr.length; i++) {
-        if(arr[i]>arr[max])
-            max =i;
-    }
-        return max;
- }
-    console.log(getHighestIndex([7,21,14,23,5]));
+//     for (let i=1; i<arr.length; i++) {
+//         if(arr[i]>arr[max])
+//             max =i;
+//     }
+//         return max;
+//  }
+//     console.log(getHighestIndex([7,21,14,23,5]));
     
 // DEPLOY qilindi 
 // http://187.53.139.171:6001
