@@ -1,18 +1,43 @@
+// MIT L-TASK
+
+function majorityElement(sonlar) {
+    let katta = 0;
+    let natija = 0;
+
+    for (let a of sonlar) {
+        let count = 0;
+
+        for (let b of sonlar) {
+            if (a===b) 
+                count++;
+        }
+        if (count > katta) {
+            katta = count;
+            natija = a;
+        }
+    }
+    return natija;
+}
+
+console.log("result:", majorityElement([3,4,5,3,6,3,7,5,3,4,4,6,8,8,9,5,3]));
+
+
+
 // MIT H- TASK
 
 
-function getPositive(arr) {
-    let result = "";
+// function getPositive(arr) {
+//     let result = "";
 
-    for (let x of arr)
-        if (x > 0) 
-        result = result + x;
+//     for (let x of arr)
+//         if (x > 0) 
+//         result = result + x;
 
-    return result;
-}
+//     return result;
+// }
 
 
-console.log("natija:", getPositive([3,5,-4,7,-8])) ;
+// console.log("natija:", getPositive([3,5,-4,7,-8])) ;
 
 
 //MIT G-TASK
